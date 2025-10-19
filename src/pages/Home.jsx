@@ -1,8 +1,9 @@
-import React from 'react'
-
+import React from 'react';
+import bigphoto from "../assets/bigphoto.jpg";
 function Home() {
   return (
-    <div>Home</div>
+    <div className='container'>
+    </div>
   )
 }
 

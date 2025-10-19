@@ -1,4 +1,12 @@
-
+.container {
+  height: 100vh;          /* full screen height */
+  width: 100%;
+  background-image: url("./assets/bigphoto.jpg");
+  background-size: cover;  /* cover entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 .hearingaid{
     display: block;
     position: absolute;
