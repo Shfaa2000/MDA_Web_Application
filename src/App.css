@@ -3,16 +3,29 @@
     display: block;
     position: absolute;
     width: 697px;
-    height: 616px;
+    height: 400px;
     top: 0;
     left: 0;
 }
+.care{
+    display: block;
+    position: absolute;
+    width: 697px;
+    height: 241px;
+    top: 400px;
+    left: 0;
+}
 .login{
+    position: absolute;
     width: 664px;
+    height: 640px;
+    top: 0px;
+    right: 0;
+    left: 700px;
+    /* display: block; */
 }
 .login h1{
-    top: 19px;
-    left: 966px;
+    
     color: #1E1E1E;
     font-weight: 400;
     font-size: 64px;
