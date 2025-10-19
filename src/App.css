@@ -22,11 +22,64 @@
     top: 0px;
     right: 0;
     left: 700px;
-    /* display: block; */
+    text-align: center;
+    color: #1E1E1E;
 }
 .login h1{
-    
+    opacity: 80%;
     color: #1E1E1E;
     font-weight: 400;
     font-size: 64px;
+    
+}
+.login p{
+    font-size: 14px;
+    opacity: 60%;
+    font-weight: 400;
+}
+.login input{
+    margin-top: 20px;
+    padding: 20px;
+    width: 480px;
+    color: #ffffff;
+    border-radius: 40px;
+}
+.login .forget{
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.login button{
+    margin-top: 20px;
+    width: 170px;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 24px;
+    background-color: rgb(41, 158, 226);
+    border-radius: 50px;
+}
+.login .haveaccount{
+    margin-top: 130px;
+}
+.login span{
+    color: blue;
+}
+.success{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 115px;
+    font-weight: 400;
+    width: 633px;
+    height: 300px;
+    line-height: 100%;
+}
+.mda{
+    position: absolute;
+    top: 310px;
+    left: 30px;
+    font-size: 115px;
+    font-weight: 400;
+    width: 633px;
+    height: 300px;
+    line-height: 100%;
 }
