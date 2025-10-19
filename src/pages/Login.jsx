@@ -4,7 +4,7 @@ import care from "../assets/care.jpg"
 
 function Login() {
   return (
-    <div className="">
+    <div className="All">
     <div className=''>
       <img className='hearingaid' src={hearingaid} alt=''></img>
       <img className='care' src={care} alt=''></img>

@@ -2,20 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body{
-    background-color: rgb(149, 245, 245);
-    width: 100%;
-    height: 100%;
-   /* display: flex;
-    justify-content: center;
-    align-items: center;
-    /* overflow: hidden; */
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-#root{
-    width: 1200px;
-    height: 640px;
-    /* overflow: hidden; */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important; 
 }
