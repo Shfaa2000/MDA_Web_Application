@@ -1,5 +1,12 @@
-
-
+.container {
+  height: 100vh;          /* full screen height */
+  width: 100%;
+  background-image: url("./assets/ff99cbf432cbf9b2c26afcdb1af780999035369a.jpg");
+  background-size: cover;  /* cover entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 .hearingaid{
     display: block;
     position: absolute;
