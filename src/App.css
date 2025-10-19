@@ -1,0 +1,19 @@
+
+.hearingaid{
+    display: block;
+    position: absolute;
+    width: 697px;
+    height: 616px;
+    top: 0;
+    left: 0;
+}
+.login{
+    width: 664px;
+}
+.login h1{
+    top: 19px;
+    left: 966px;
+    color: #1E1E1E;
+    font-weight: 400;
+    font-size: 64px;
+}
