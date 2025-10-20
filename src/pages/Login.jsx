@@ -1,27 +1,39 @@
-import React from 'react'
-import hearingaid from '../assets/hearingaid.jpg'
-import care from "../assets/care.jpg"
+import React from "react";
+import hearingaid from "../assets/hearingaid.jpg";
+import care from "../assets/care.jpg";
+import icon from "../assets/icon.png";
+import facebook from "../assets/facebook.ico";
+import google from "../assets/google.jpg"
 
 function Login() {
   return (
-    <div className="">
-    <div className=''>
-      <img className='hearingaid' src={hearingaid} alt=''></img>
-      <p className='success'>Be Successful With Us</p>
-      <img className='care' src={care} alt=''></img>
-      <p className='mda'>MDA</p>
+    <div className="All">
+      <div className="">
+        <img className="hearingaid" src={hearingaid} alt=""></img>
+        <p className="success">Be Successful With Us</p>
+        <img className="care" src={care} alt=""></img>
+        <p className="mda">MDA</p>
+        <img src={icon} className="loginicon" />
+      </div>
+      <div className="login">
+        <h1 className="">Sign In</h1>
+        <p>Fill your information or register with your social account</p>
+        <input placeholder="Email Address"></input>
+        <input placeholder="Password"></input>
+        <button className="forget">Forget your password?</button>
+        <button className="logbutton block align-middle">Log In</button>
+        <div>
+          <p className="haveaccount mt-40 mb-3">
+          Does have an account?<span>Sign up</span>
+        </p>
+        <div className="flex justify-center m-2">
+          <img src={facebook} className="facebook" />
+          <img src={google} className="google" />
+        </div>
+        </div>
+      </div>
     </div>
-    <div className="login">
-      <h1 className=''>Sign In</h1>
-      <p>Fill your information or register with your social account</p>
-      <input placeholder='Email Address'></input>
-      <input placeholder='Password'></input>
-      <p className='forget'>Forget your password?</p>
-      <button>Log In</button>
-      <p className='haveaccount'>Does have an account?<span>Sign in</span></p>
-    </div>
-    </div>
-  )
+  );
 }
 
-export default Login
+export default Login;
