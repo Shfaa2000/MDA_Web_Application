@@ -4,6 +4,7 @@ import care from "../assets/care.jpg";
 import icon from "../assets/icon.png";
 import facebook from "../assets/facebook.ico";
 import google from "../assets/google.jpg"
+import { NavLink } from "react-router-dom";
 
 function Login() {
   return (
@@ -23,10 +24,10 @@ function Login() {
         <button className="forget">Forget your password?</button>
         <button className="logbutton block align-middle">Log In</button>
         <div>
-          <p className="haveaccount mt-40 mb-3">
-          Does have an account?<span>Sign up</span>
+          <p className="haveaccount mt-5 mb-3">
+          Does have an account?<NavLink to="/signup"><span>Sign up</span></NavLink> 
         </p>
-        <div className="flex justify-center m-2">
+        <div className="flex justify-center">
           <img src={facebook} className="facebook" />
           <img src={google} className="google" />
         </div>

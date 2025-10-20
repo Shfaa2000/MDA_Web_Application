@@ -17,6 +17,75 @@
     left: 0;
      filter: blur(4px);
 }
+.learnw
+{
+    font-family: "Joan",serif;
+    width: 600px;
+    font-size: 20px;
+    color: white;
+}
+.twocol
+{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    gap: 20px;
+    position: absolute;
+    top: 10px;
+    left:800px ;
+}
+.btnlog
+{
+    font-family: "Joan",serif;
+    background-color: #52C6F8;
+    color: white;
+    padding: 13px 27px 13px 27px;
+    border: none;
+    border-radius: 32px;
+    transition: ease-out 0.3s;
+}
+.btnsign
+{
+     font-family: "Joan",serif;
+    background-color: white;
+    color: #52C6F8;
+    padding: 13px 27px 13px 27px;
+    border: none;
+    border-radius: 32px;
+    transition: ease-out 0.3s;
+}
+.btnlog:hover
+{
+    background-color: white;
+    color: #52C6F8;
+}
+.btnsign:hover
+{
+    background-color: #52C6F8;
+    color: white;
+}
+.btns
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.learnm
+{
+    font-family: "Joan",serif;
+    font-size: 20px;
+    color: #00000040;
+}
+.fcol
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+    margin-top: 430px;
+    margin-left: 10px;
+}
 .All
 {
     background-color: #87CEEB;
@@ -47,6 +116,31 @@
     top: 110px;
     left: 290px;
   transition: opacity 0.5s ease-out;
+}
+.withpic
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+.mma
+{
+    font-family: "Kotta One",sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+}
+.doctors
+{
+    position: absolute;
+    width: 580px;
+    left: -250px;
+    top: 80px;
+}
+.iicon
+{
+     width: 120px;
+    height: 120px;
 }
 .grad
 {
@@ -110,7 +204,7 @@
     height: 640px;
     top: 0px;
     right: 0;
-    left: 700px;
+    left: 600px;
     text-align: center;
     color: #1E1E1E;
 }
@@ -185,5 +279,5 @@ span{
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    margin-left: 30px;
+    margin-left: 10px;
 }

@@ -4,6 +4,7 @@ import care from "../assets/care.jpg";
 import icon from "../assets/icon.png";
 import facebook from "../assets/facebook.ico";
 import google from "../assets/google.jpg"
+import { NavLink } from 'react-router-dom';
 
 function SignUp() {
   return (
@@ -24,8 +25,8 @@ function SignUp() {
           <input placeholder="Confirm Password"></input>
           <button className='signbutton block'>Sign up</button>
           <div>
-                    <p className="haveaccount mt-10">
-                    Already have an account?<span>Sign in</span>
+                    <p className="haveaccount mt-3">
+                    Already have an account?<NavLink to="/login"><span>Sign in</span></NavLink>
                   </p>
                   <div className="flex justify-center m-2">
                     <img src={facebook} className="facebook" />
