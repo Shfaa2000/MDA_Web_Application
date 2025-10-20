@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import bigphoto from "../assets/bigphoto.jpg";
 import icon from "../assets/icon.png";
 import graduation from "../assets/pngwing.com (64) 1.png";
+import { useNavigate } from 'react-router-dom';
 function Home() {
   const [showContent, setShowContent] = useState(false);
+  const navigate=useNavigate();
+  useEffect(()=>
+    {
+    if(showContent){
+      const timer=setTimeout(()=>{
+       navigate("/options")
+      },2000)
+     
+      return ()=> clearTimeout(timer)
+    }
+    },[navigate,showContent])
    const divStyle = {
     backgroundImage: `url(${bigphoto})`, // correct syntax
     backgroundSize: 'cover',             // make it fill the screen
