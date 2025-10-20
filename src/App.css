@@ -6,6 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: cover;
 }
 .hearingaid{
     position: absolute;
@@ -14,6 +15,46 @@
     object-fit: cover;
     top: 0;
     left: 0;
+     filter: blur(4px);
+}
+.All
+{
+    background-color: #87CEEB;
+    overflow: hidden !important;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.welcome
+{
+    font-family:'Kotta One',cursive;
+    text-align: center;
+    font-style: italic;
+    font-size: 66px;
+    width: 411px;
+    height: 130px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+      transform: translateY(20px); /* start slightly lower */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.icon
+{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 110px;
+    left: 290px;
+  transition: opacity 0.5s ease-out;
+}
+.grad
+{
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+  transition: opacity 0.5s ease-out;
      filter: blur(4px);
 }
 .All
