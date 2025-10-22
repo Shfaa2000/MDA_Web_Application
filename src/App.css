@@ -220,11 +220,16 @@ p{
     font-weight: 400;
 }
 input{
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 20px;
     width: 480px;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #1E1E1E;
     border-radius: 40px;
+}
+input:focus{
+    outline: none;
+    border: 2px solid rgb(41, 158, 226);
 }
 .forget{
     color: #1E1E1E;
@@ -280,4 +285,34 @@ span{
     height: 48px;
     border-radius: 50%;
     margin-left: 10px;
+}
+
+@media (max-width:767px){
+    .photos{
+        display: none;
+    }
+    .login, .signup{
+    width: 414px;
+    height: 800px;
+    top: 30px;
+    left: 5px;
+}
+h1{
+    font-size: 50px;
+}
+input{
+    margin-top: 25px;
+    padding: 15px;
+    width: 350px;
+}
+.forget{
+    margin-top: 15px;
+    margin-left: 200px;
+}
+.signbutton, .logbutton{
+    margin-top: 20px;
+    margin-left: 130px;
+    width: 150px;
+    padding: 15px;
+}
 }
