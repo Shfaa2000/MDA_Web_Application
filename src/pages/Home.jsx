@@ -5,6 +5,7 @@ import graduation from "../assets/pngwing.com (64) 1.png";
 import { useNavigate } from 'react-router-dom';
 function Home() {
   const [showContent, setShowContent] = useState(false);
+  const [IsMobile,setIsMobile]=useState(false);
   const navigate=useNavigate();
   useEffect(()=>
     {
@@ -16,9 +17,18 @@ function Home() {
       return ()=> clearTimeout(timer)
     }
     },[navigate,showContent])
+     useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
    const divStyle = {
     backgroundImage: `url(${bigphoto})`, // correct syntax
-    backgroundSize: 'cover',             // make it fill the screen
+    ...(IsMobile ? 
+      {  backgroundSize: 'contain'  }
+      :  {backgroundSize:"cover"}
+    ),
     backgroundRepeat: 'no-repeat',       // prevent duplicates
     backgroundPosition: 'center',        // center the image
     width: '100%',                        // full width
